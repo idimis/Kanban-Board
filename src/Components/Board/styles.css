@@ -1,0 +1,18 @@
+.board {
+    width: 1020px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .board-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .board-description {
+    color: gray;
+  }
+  

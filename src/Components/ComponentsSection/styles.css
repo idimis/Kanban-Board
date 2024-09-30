@@ -1,0 +1,23 @@
+.components-section {
+    width: 394px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .labels, .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .label, .tag {
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Change if needed */
+    border-radius: 5px;
+  }
+  

@@ -1,13 +1,14 @@
 import React from 'react';
-import Board from './components/Board';
-import Cards from './components/Cards';
-import ComponentsSection from './components/ComponentsSection';
-import People from './components/People';
+import Board from './Components/Board';
+import Cards from './Components/Cards';
+import ComponentsSection from './Components/ComponentsSection';
+import People from './Components/People';
+import './App.css'; 
 
 const App: React.FC = () => {
   return (
-    <div className="flex flex-col items-center">
-      <div className="flex space-x-4">
+    <div className="app-container">
+      <div className="flex-container">
         <ComponentsSection />
         <People />
       </div>
