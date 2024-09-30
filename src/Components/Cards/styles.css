@@ -1,30 +1,84 @@
 .cards {
-    width: 300px;
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-  }
-  
-  .card-header {
-    background-color: pink;
-    padding: 10px;
-    font-size: 20px;
-  }
-  
-  .card {
-    margin-top: 20px;
-  }
-  
-  .card-title {
-    font-weight: bold;
-  }
-  
-  .card-description {
-    color: gray;
-  }
-  
-  .tasks {
-    margin-top: 10px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  width: 300px; /* Fixed width for cards section */
+  height: fit-content;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-header {
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  background-color: #ff69b4; /* Pink color */
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02); /* Slight hover effect */
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.images img {
+  width: 40px;
+  height: 40px;
+}
+
+.tasks label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.tag {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  width: 30%;
+}
+
+.rose-box {
+  background-color: #ff007f; /* Rose color */
+}
+
+.grey-box {
+  background-color: #808080; /* Grey color */
+}
+
+.green-box {
+  background-color: #32cd32; /* Green color */
+}

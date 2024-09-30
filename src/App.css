@@ -1,13 +1,44 @@
-.app-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.flex-container {
+/* Layout Container */
+.layout-container {
   display: flex;
-  gap: 16px; /* Space between ComponentsSection and People */
+  justify-content: space-between; /* Distribute space between components */
+  align-items: flex-start; /* Align items at the start */
+  padding: 20px; /* Optional: Space around the container */
 }
 
-/* Optional: Additional styles for Cards and Board can be added here */
+/* Components Section Styles */
+.components-section {
+  flex: 1; /* Adjust as necessary */
+  margin-right: 10px; /* Space between sections */
+}
+
+/* People Section Styles */
+.people-section {
+  flex: 1; /* Adjust as necessary */
+  margin-right: 10px; /* Space between sections */
+}
+
+/* Cards Section Styles */
+.cards-section {
+  flex: 1; /* Adjust as necessary */
+  margin-right: 10px; /* Space between sections */
+}
+
+/* Board Section Styles */
+.board-section {
+  flex: 1; /* Adjust as necessary */
+}
+
+/* Board, Cards, and People styles (as previously defined) */
+.box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Adjusted Styles for each section can go here */

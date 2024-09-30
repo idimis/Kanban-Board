@@ -1,23 +1,96 @@
 .components-section {
-    width: 394px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .labels, .tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-  
-  .label, .tag {
-    width: 80px;
-    height: 30px;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white; /* Change if needed */
-    border-radius: 5px;
-  }
-  
+  padding: 20px;
+}
+
+.labels,
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Label and Tag boxes with different colors */
+.label, .tag {
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.lavender-box {
+  background-color: #E6E6FA;
+  color: #4B0082;
+}
+
+.green-box {
+  background-color: #32CD32;
+  color: #fff;
+}
+
+.grey-box {
+  background-color: #A9A9A9;
+  color: #fff;
+}
+
+.pink-box {
+  background-color: #FFC0CB;
+  color: #fff;
+}
+
+.base-box {
+  background-color: #FFFFFF;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+/* Task checkboxes */
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Custom Checkbox */
+.checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.checkbox:checked {
+  border-color: #000;
+}
+
+.checkbox:checked::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  top: 2px;
+  left: 5px;
+  transform: rotate(45deg);
+}
+
+.checkbox:not(:checked)::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+}

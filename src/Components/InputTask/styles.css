@@ -1,0 +1,30 @@
+.input-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .input-task input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .input-task button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff69b4; /* Pink color */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .input-task button:hover {
+    background-color: #ff3d91; /* Darker pink on hover */
+  }
+  
