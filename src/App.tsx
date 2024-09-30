@@ -5,17 +5,15 @@ import Header from './Components/Header';
 import KanbanBoard from './Components/KanbanBoard';
 import InputTask from './Components/InputTask';
 import Footer from './Components/Footer';
-import { DragDropContext, Droppable } from 'react-beautiful-dnd'; // Added Droppable
+import { DragDropContext, Droppable } from 'react-beautiful-dnd'; 
 import Board from './Components/Board';
 import Cards from './Components/Cards';
-import ComponentsSection from './Components/ComponentsSection'; // Corrected name
+import ComponentsSection from './Components/ComponentsSection';
 import People from './Components/People';
-import Lane from './Components/Lane'; 
-
 
 const Test: React.FC = () => {
   const [tasks, setTasks] = useState({
-    'To Do': [],
+    'To Do': ['Task 1', 'Task 2'],
     'In Progress': [],
     'Done': [],
   });
@@ -61,7 +59,6 @@ const Test: React.FC = () => {
             <Cards />
             <Board />
             <People />
-            <Lane />
             <ComponentsSection />
             <Footer />
             {provided.placeholder}

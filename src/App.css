@@ -1,41 +1,60 @@
-/* Global styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Layout Container */
 .layout-container {
   display: flex;
-  justify-content: space-between; /* Distribute space between components */
-  align-items: flex-start; /* Align items at the start */
-  padding: 20px; /* Optional: Space around the container */
+  justify-content: space-between; 
+  align-items: flex-start; 
+  padding: 20px; 
 }
 
-/* Components Section Styles */
+.main-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.kanban-board {
+  flex: 2;
+}
+
 .components-section {
-  flex: 1; /* Adjust as necessary */
-  margin-right: 10px; /* Space between sections */
+  flex: 1; 
+  margin-right: 10px;
 }
 
-/* People Section Styles */
 .people-section {
-  flex: 1; /* Adjust as necessary */
-  margin-right: 10px; /* Space between sections */
+  flex: 1; 
+  margin-right: 10px; 
 }
 
-/* Cards Section Styles */
 .cards-section {
-  flex: 1; /* Adjust as necessary */
-  margin-right: 10px; /* Space between sections */
+  flex: 1; 
+  margin-right: 10px;
 }
 
-/* Board Section Styles */
 .board-section {
-  flex: 1; /* Adjust as necessary */
+  flex: 1;
 }
 
-/* Board, Cards, and People styles (as previously defined) */
+/* New layout for Cards and People */
+.main-layout {
+  display: flex; /* Use flexbox to arrange Cards and People side by side */
+  gap: 20px; /* Add some space between Cards and People */
+}
+
+.cards-section {
+  flex: 1; /* Flex-grow to take available space */
+  margin-right: 0; /* No margin needed, handled by gap */
+}
+
+.people {
+  flex: 0 0 300px; /* Fixed width for the People section, adjust as needed */
+}
+
+/* Box styling */
 .box {
   border: 1px solid #ccc;
   border-radius: 8px;

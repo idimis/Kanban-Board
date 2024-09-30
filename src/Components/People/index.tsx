@@ -13,18 +13,24 @@ const People: React.FC = () => {
     <div className="people box">
       <div className="team">
         <h3>Design</h3>
-        <img src={people1} alt="Design member 1" />
-        <img src={people2} alt="Design member 2" />
+        <div className="members">
+          <img src={people1} alt="Design member 1" />
+          <img src={people2} alt="Design member 2" />
+        </div>
       </div>
       <div className="team">
         <h3>Engineering</h3>
-        <img src={people3} alt="Engineering member 1" />
-        <img src={people4} alt="Engineering member 2" />
+        <div className="members">
+          <img src={people3} alt="Engineering member 1" />
+          <img src={people4} alt="Engineering member 2" />
+        </div>
       </div>
       <div className="team">
         <h3>PM</h3>
-        <img src={people5} alt="PM member 1" />
-        <img src={people6} alt="PM member 2" />
+        <div className="members">
+          <img src={people5} alt="PM member 1" />
+          <img src={people6} alt="PM member 2" />
+        </div>
       </div>
     </div>
   );
